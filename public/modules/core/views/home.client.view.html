@@ -85,7 +85,22 @@
 			<ol style="margin-left: 20px;">
 				<li>The tests generated for our custom crud module are located in
 					public/modules/items/tests</li>
-				
+
+			</ol>
+
+			<br><p><b>Build Manager Tasks</b></p>
+			<ol style="margin-left: 20px">
+				<li>Meanjs is configured to work with grunt, but can be used with
+				gulp as well.</li>
+				<li>The main task of the Build Manager is <code>grunt build</code>. It
+				runs a number of actions:</li>
+				<ul>
+					<li>lint: runs jslint and csslint</li>
+					<li>loadconfig: tells grunt where to put the minified js and css files.</li>
+					<li>ngAnnotate: rebuilds the angularjs dependency injections and annotations</li>
+					<li>uglify: minify js files.</li>
+					<li>cssmin: minify css files.</li>
+				</ul>
 			</ol>
 
 
