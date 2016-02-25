@@ -115,7 +115,15 @@
 					or other alternatives.</li>
 					<li>Hosting options: heroku (free), openshift (free, custom domains),
 					digitalocean (not free), microsoft azure, modulus, joyent.</li>
-					<li>Heroku: </li>
+					<li>Heroku steps:</li>
+					<ol>
+						<li>If it is not installed in our computer, we'll need to
+						install toolbelt.heroku.com</li>
+						<li>Run <code>heroku create</code> to create the new app.</li>
+						<li>Run <code>git push heroku master</code> to upload the repository.</li>
+						<li>Run <code>heroku config:set NODE_ENV=production</code></li>
+						<li>Run <code>heroku open</code></li>
+					</ol>
 				</ul>
 			</ol>
 
